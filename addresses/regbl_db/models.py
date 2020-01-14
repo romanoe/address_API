@@ -1,22 +1,24 @@
-from django.contrib.gis.db import models
+from django.contrib.gis.db import models as models_geo
+
+from django.db import models
 
 # Create your models here.
 class addresses(models.Model):
-    EGID = models.AutoField(),
-    EDID = models.AutoField(),
-    GDEKT = models.CharField(max_length = 50),
-    GDENR = models.PositiveIntegerField(),
-    GDENAME = models.CharField(max_length = 50),
-    STRNAME = models.CharField(max_length = 50),
-    DEINR = models.CharField(max_length = 50),
-    PLZ4 = models.PositiveIntegerField(),
-    PLZZ = models.PositiveIntegerField(),
-    PLZNAME = models.CharField(max_length = 50),
-    GKODE = models.FloatField(),
-    GKODN = models.FloatField(),
-    STRSP = models.CharField(max_length = 2),
-    STRNAME_DEINR = models.CharField(max_length = 50)
-    COORDINATES = models.PointField()
+    EGID = models.IntegerField(default=0)
+    EDID = models.IntegerField(default=0)
+    GDEKT = models.CharField(max_length = 50, default="")
+    GDENR = models.PositiveIntegerField(default=99)
+    GDENAME = models.CharField(max_length = 50, default="")
+    STRNAME = models.CharField(max_length = 50, default="")
+    DEINR = models.CharField(max_length = 50, default="")
+    PLZ4 = models.IntegerField(default=-99)
+    PLZZ = models.IntegerField(default=-99)
+    PLZNAME = models.CharField(max_length = 50, default="")
+    GKODE = models.FloatField(default=-99)
+    GKODN = models.FloatField(default=-99)
+    STRSP = models.CharField(max_length = 2, default="")
+    STRNAME_DEINR = models.CharField(max_length = 50, default="")
+    COORDINATES = models_geo.PointField()
 
 
 

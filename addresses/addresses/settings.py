@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '605_+@*%!#9488t(h7#yg9@wkb&szxp*7mw711k3$%6u4zyb$b'
+SECRET_KEY = '3#zj%01&y=mh+^kt10*dm#^2fc9-qz@f09flrd$-mz8wj@btxw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-    'rest_framework',
     'addresses',
-    'regbl_db'
+    'regbl_db',
+    'clear_cache',
 ]
 
 MIDDLEWARE = [
@@ -79,13 +79,12 @@ WSGI_APPLICATION = 'addresses.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'regbl_db',
-        'USER' : 'admin_metasante',
-        'PASSWORD' : 'METAsante2019',
-        'HOST' : 'localhost',
-        'PORT' : '5432',
-
+        'USER': 'admin_metasante',
+        'PASSWORD': 'METAsante2019',
+        'HOST': 'localhost',
+        'PORT' : '5432'
     }
 }
 
