@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.gis.db import models as models_geo
+from django.contrib.gis.db import models as geo_models
 
 
 
@@ -19,7 +19,7 @@ class Address(models.Model):
     GKODN = models.FloatField(default=-99)
     STRSP = models.CharField(max_length = 2, default="")
     STRNAME_DEINR = models.CharField(max_length = 50, default="")
-    COORDINATES = models_geo.PointField()
+    COORDINATES = geo_models.PointField( srid = 2056)
 
 
 
