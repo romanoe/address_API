@@ -3,21 +3,21 @@ from django.contrib.gis.utils import LayerMapping
 from .models import Address
 
 addresses_mapping = {
-'EGID' : 'EGID',
-'EDID' :  'EDID',
-'GDEKT' : 'GDEKT',
-'GDENR' : 'GDENR',
-'GDENAME' : 'GDENAME',
-'STRNAME' : 'STRNAME',
-'DEINR' : 'DEINR',
-'PLZ4' : 'PLZ4',
-'PLZZ' : 'PLZZ',
-'PLZNAME' : 'PLZNAME',
-'GKODE' : 'GKODE',
-'GKODN' : 'GKODN',
-'STRSP' : 'STRSP',
-'STRNAME_DEINR' : 'STRNAME_DE',
-'COORDINATES' : 'GEOMETRY'
+    'EGID' : 'EGID',
+    'EDID' :  'EDID',
+    'GDEKT' : 'GDEKT',
+    'GDENR' : 'GDENR',
+    'GDENAME' : 'GDENAME',
+    'STRNAME' : 'STRNAME',
+    'DEINR' : 'DEINR',
+    'PLZ4' : 'PLZ4',
+    'PLZZ' : 'PLZZ',
+    'PLZNAME' : 'PLZNAME',
+    'GKODE' : 'GKODE',
+    'GKODN' : 'GKODN',
+    'STRSP' : 'STRSP',
+    'STRNAME_DEINR' : 'STRNAME_DE',
+    'GEOMETRY' : 'GEOMETRY'
 
 }
 
