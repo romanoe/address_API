@@ -20,8 +20,8 @@ class ChAddresses(models.Model):
     plz4 = models.BigIntegerField(blank=True, null=True)
     plzz = models.BigIntegerField(blank=True, null=True)
     plzname = models.CharField(max_length=254, blank=True, null=True)
-    gkode = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    gkodn = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    gkode = models.DecimalField(max_digits=6553510, decimal_places=6553510, blank=True, null=True)
+    gkodn = models.DecimalField(max_digits=6553510, decimal_places=6553510, blank=True, null=True)
     strsp = models.CharField(max_length=254, blank=True, null=True)
     strname_de = models.CharField(max_length=254, blank=True, null=True)
 
@@ -138,3 +138,6 @@ class DjangoSession(models.Model):
     class Meta:
         managed = False
         db_table = 'django_session'
+
+def __str__(self):
+    return str(self.user.username)
