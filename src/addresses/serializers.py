@@ -6,4 +6,4 @@ from rest_framework import serializers
 class ChAddressesSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChAddresses
-        fields = '__all__'
+        fields = ('egid','plz4','gdename','strname_de','geom')
