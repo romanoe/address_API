@@ -16,4 +16,9 @@ class ChCitySerializer(serializers.ModelSerializer):
 class ChStrNameSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChAddresses
-        fields = ('strname_de',)
+        fields = ('strname',)
+
+class ChStrNrSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ChAddresses
+        fields = ('deinr',)
