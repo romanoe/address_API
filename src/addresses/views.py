@@ -1,13 +1,25 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import ChAddresses
-from .serializers import ChAddressesSerializer
+from .serializers import ChNpaSerializer, ChStrNameSerializer, ChCitySerializer
 
 import requests
 
 
-class CHAddressesView(viewsets.ModelViewSet):
+class CHNpaView(viewsets.ModelViewSet):
     queryset = ChAddresses.objects.all()
-    serializer_class = ChAddressesSerializer
+    serializer_class = ChNpaSerializer
     model = ChAddresses
-    filterset_fields = ('plz4','gdename',)
+    filterset_fields = ('plz4',)
+
+class CHCityView(viewsets.ModelViewSet):
+    queryset = ChAddresses.objects.all()
+    serializer_class = ChCitySerializer
+    model = ChAddresses
+    filterset_fields = ('plz4', 'gdename',)
+
+class CHStrNameView(viewsets.ModelViewSet):
+    queryset = ChAddresses.objects.all()
+    serializer_class = ChStrNameSerializer
+    model = ChAddresses
+    filterset_fields = ('plz4','strname_de',)

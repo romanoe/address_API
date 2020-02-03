@@ -19,9 +19,12 @@ from . import views
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register('addresses', views.CHAddressesView)
+router.register(r'addresse', views.CHStrNameView, 'strname')
+router.register(r'npa', views.CHNpaView, 'npa')
+router.register(r'city', views.CHCityView, 'city')
 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path(r'api/', include(router.urls))
+
 ]
