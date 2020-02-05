@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'regbl_db.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':  'django.contrib.gis.db.backends.postgis',
-        'NAME': 'regbl',
-        'USER': 'admin_metasante',
+        'NAME': 'metasante',
+        'USER': 'metasante',
         'PASSWORD': 'METAsante2019',
-        'HOST': 'localhost',
+        'HOST': 'lasigvm2.epfl.ch',
         'PORT': '5432',
 
     }
