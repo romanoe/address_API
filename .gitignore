@@ -3,4 +3,4 @@ CH_addresses.*
 src/addresses/__pycache__
 src/regbl_db/__pycache__
 src/regbl_db/settings.py
-env/*
+env/
