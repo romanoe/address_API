@@ -1,0 +1,75 @@
+[2020-02-11 11:12:04 +0000] [13107] [INFO] Starting gunicorn 20.0.4
+[2020-02-11 11:12:04 +0000] [13107] [INFO] Listening at: unix:/tmp/gunicorn.sock (13107)
+[2020-02-11 11:12:04 +0000] [13107] [INFO] Using worker: sync
+[2020-02-11 11:12:04 +0000] [13110] [INFO] Booting worker with pid: 13110
+[2020-02-11 11:12:04 +0000] [13110] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'regbl_db.wgsi'
+[2020-02-11 11:12:04 +0000] [13110] [INFO] Worker exiting (pid: 13110)
+[2020-02-11 11:12:04 +0000] [13111] [INFO] Booting worker with pid: 13111
+[2020-02-11 11:12:04 +0000] [13111] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'regbl_db.wgsi'
+[2020-02-11 11:12:04 +0000] [13111] [INFO] Worker exiting (pid: 13111)
+[2020-02-11 11:12:04 +0000] [13112] [INFO] Booting worker with pid: 13112
+[2020-02-11 11:12:04 +0000] [13112] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lasigadmin/metasante/addresses-API/env_metasante/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'regbl_db.wgsi'
+[2020-02-11 11:12:04 +0000] [13112] [INFO] Worker exiting (pid: 13112)
