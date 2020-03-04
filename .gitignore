@@ -3,6 +3,9 @@ CH_addresses.*
 src/addresses/__pycache__
 src/regbl_db/__pycache__
 src/regbl_db/settings.py
+<<<<<<< HEAD
 src/static
+=======
+>>>>>>> c3dc415c2f9434facef446b43d2821bcb723819e
 env
 env_metasante
