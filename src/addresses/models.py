@@ -20,8 +20,8 @@ class ChAddresses(models.Model):
     plz4 = models.BigIntegerField(blank=True, null=True)
     plzz = models.BigIntegerField(blank=True, null=True)
     plzname = models.CharField(max_length=254, blank=True, null=True)
-    gkode = models.DecimalField(max_digits=6553510, decimal_places=6553510, blank=True, null=True)
-    gkodn = models.DecimalField(max_digits=6553510, decimal_places=6553510, blank=True, null=True)
+    gkode = models.DecimalField(max_digits=655351, decimal_places=3, blank=True, null=True)
+    gkodn = models.DecimalField(max_digits=655351, decimal_places=3, blank=True, null=True)
     strsp = models.CharField(max_length=254, blank=True, null=True)
     strname_de = models.CharField(max_length=254, blank=True, null=True)
 
