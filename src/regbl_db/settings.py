@@ -25,7 +25,7 @@ SECRET_KEY = 'c_^ku+vvqk6^+31v7(q_yknxzq1qr0b1%imtw+-34@+#w4wc@+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lasigvm2.epfl.ch']
 
 
 # Application definition
@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'metasante',
         'USER': 'metasante',
         'PASSWORD': 'METAsante2019',
-        'HOST': 'lasigvm2.epfl.ch',
+        'HOST': 'localhost',
         'PORT': '5432',
 
     }
