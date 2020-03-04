@@ -23,7 +23,7 @@ router.register(r'address', views.CHStrNameView, 'strname')
 router.register(r'npa', views.CHNpaView, 'npa')
 router.register(r'city', views.CHCityView, 'city')
 router.register(r'address_nr', views.CHStrNrView, 'strname_nr')
-
+router.register(r'complete_address',views.CHAddressesView,'complete_address')
 
 urlpatterns = [
     path(r'api/', include(router.urls))

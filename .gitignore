@@ -3,3 +3,7 @@ CH_addresses.*
 src/addresses/__pycache__
 src/regbl_db/__pycache__
 src/regbl_db/settings.py
+<<<<<<< HEAD
+=======
+env/*
+>>>>>>> 0987ceb0a674eadad58758d41e339f941013f070

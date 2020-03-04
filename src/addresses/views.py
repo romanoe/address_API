@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import ChAddresses
-from .serializers import ChNpaSerializer, ChStrNameSerializer, ChCitySerializer, ChStrNrSerializer
+from .serializers import ChNpaSerializer, ChStrNameSerializer, ChCitySerializer, ChStrNrSerializer, ChAddressesSerializer
 
 import requests
 
@@ -33,3 +33,10 @@ class CHStrNrView(viewsets.ModelViewSet):
     model = ChAddresses
     filterset_fields = ('plz4','strname','deinr',)
     search_fields = ('strname','deinr',)
+
+class CHAddressesView(viewsets.ModelViewSet):
+    queryset = ChAddresses.objects.all()
+    serializer_class = ChAddressesSerializer
+    model = ChAddresses
+    filterset_fields = ('plz4','strname','deinr',)
+    # search_fields = ('strname','deinr','plz4',)

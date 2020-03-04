@@ -22,3 +22,8 @@ class ChStrNrSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChAddresses
         fields = ('deinr',)
+
+class ChAddressesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ChAddresses
+        fields = ('gkode','gkodn','egid',)
