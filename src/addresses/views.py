@@ -39,4 +39,4 @@ class CHAddressesView(viewsets.ModelViewSet):
     serializer_class = ChAddressesSerializer
     model = ChAddresses
     filterset_fields = ('plz4','strname','deinr',)
-    # search_fields = ('strname','deinr','plz4',)
+    search_fields = ('strname','deinr','plz4',)
