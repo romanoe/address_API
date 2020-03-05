@@ -32,7 +32,7 @@ class CHStrNrView(viewsets.ModelViewSet):
     serializer_class = ChStrNrSerializer
     model = ChAddresses
     filterset_fields = ('plz4','strname','deinr',)
-    search_fields = ('strname','deinr',)
+    search_fields = ('plz4','strname','deinr',)
 
 class CHAddressesView(viewsets.ModelViewSet):
     queryset = ChAddresses.objects.all()
